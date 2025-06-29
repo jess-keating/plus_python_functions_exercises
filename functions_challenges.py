@@ -69,4 +69,10 @@ def relay_distance_input():
     Returns:
         - A float representing the total distance run.
     """
-    pass
+    number_of_runners = float(input("How many runners are in the relay?"))
+    distance_per_runner = float(input("How far will each runner run (in miles)? "))
+    
+    total_miles = relay_distance(number_of_runners, distance_per_runner)
+    total_km = total_miles * 1.60934  # Convert the total distance from miles to kilometers
+
+    return total_km # Return the total distance run in kilometers
