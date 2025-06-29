@@ -7,11 +7,13 @@ def get_float(prompt_string: str):
     Arguments:
         - prompt_string: A string that will be shown to the user when they are
           prompted to input the number.
+    
 
     Returns:
         - A float converted from the user's input
     """
-    pass
+    number = input("Please enter your favorite number?")
+    return float(number)
 
 
 #############################################################################################################
@@ -27,7 +29,9 @@ def miles_to_km(distance_in_miles: float):
     Returns
         - a float representing the distance in kilometers
     """
-    pass
+    result = distance_in_miles * 1.60934
+    return result  # Return the converted distance in kilometers
+    
 
 
 #############################################################################################################
@@ -45,7 +49,9 @@ def relay_distance(distance_per_runner: float, number_of_runners: float):
     Returns:
         - A float representing the total distance run.
     """
-    pass
+    
+    total_distance = distance_per_runner * number_of_runners
+    return total_distance  # Return the total distance run by all runners in the relay
 
 
 #############################################################################################################
